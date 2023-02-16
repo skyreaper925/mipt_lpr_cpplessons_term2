@@ -6,13 +6,13 @@ using namespace std;
 
 int main()
 {
-    int n, last, previous = 0, next = 0;
+    int n, last, previous = 0, next = 0, current;
     cin >> n >> last;
-    for (int i = 1; i <= n; i++)
-    {
-        if (i > last) previous++;
-        if (i < last) next++;
-        last = i;
+    for (int i = 1; i < n; i++) {
+        cin >> current;
+        if (current > last) previous++;
+        if (current < last) next++;
+        last = current;
     }
 
     cout << (((previous - next) > 0) ? "MAX" : "MIN") << endl;

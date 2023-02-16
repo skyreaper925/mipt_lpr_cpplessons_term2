@@ -8,8 +8,9 @@ bool leap_check (int year)
 {
     if (!(year % 4))
     {
+        if (!(year % 400)) return true;
         if (!(year % 25)) return false;
-        if (!(year % 100)) return true;
+        else return true;
     }
 
     return false;
