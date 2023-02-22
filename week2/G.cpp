@@ -10,11 +10,7 @@ using namespace std;
 int findUnique(int (&a)[N])
 {
     int result = a[0];
-    for (int i = 1; i < N; i++)
-    {
-        result ^= a[i];
-    }
-
+    for (int i = 1; i < N; i++) result ^= a[i];
     return result;
 }
 
