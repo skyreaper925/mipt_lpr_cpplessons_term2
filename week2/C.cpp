@@ -34,6 +34,7 @@ int main()
 {
     int a[N], k;
     cin >> k;
+    k = k % N;
     read_array(a);
     shiftRight(a, k);
     cout_array(a);

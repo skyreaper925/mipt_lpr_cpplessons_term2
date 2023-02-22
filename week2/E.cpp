@@ -3,7 +3,7 @@
 using namespace std;
 
 #ifndef N
-#define N 1 // actual size of the array
+#define N 5 // actual size of the array
 #endif
 
 
@@ -41,7 +41,7 @@ void mergeArrays(int (&first)[N], int (&second)[N], int (&result)[2 * N])
         {
             while (i_first < N)
             {
-                result[i_result] = second[i_first];
+                result[i_result] = first[i_first];
                 i_result++;
                 i_first++;
             }
