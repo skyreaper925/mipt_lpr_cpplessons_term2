@@ -98,7 +98,7 @@ void protocol (bool search_type, bool case_type, long long int test_number, long
 
 int main()
 {
-    long long int dots_number = 100, n = 100, N = 100000, test_number = 5;
+    long long int dots_number = 100, n = 100, N = 100000, test_number = 1;
 //    long long int dots_number, n, N, test_number;
 //    cout << "Number of dots:"; cin >> dots_number;
 //    cout << "Minimum size of array:"; cin >> n;
