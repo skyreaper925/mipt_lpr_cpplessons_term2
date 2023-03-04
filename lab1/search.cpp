@@ -35,11 +35,11 @@ void protocol (bool search_type, bool case_type, long long int test_number, long
                long long int n=100, long long int N=200000)
 {
     fout.open("C://Users/volod/CLionProjects/mipt_lpr_cpplessons_term2/lab1/search2.txt", ios::out);
-    fout << "search: " << ((search_type) ? "full" : "bin") << ", ";
-    fout << "case: " << ((case_type) ? "mean" : "worst") << ", ";
-    fout << "test: " << test_number << ';' <<  endl;
+//    fout << "search: " << ((search_type) ? "full" : "bin") << ", ";
+//    fout << "case: " << ((case_type) ? "mean" : "worst") << ", ";
+//    fout << "test: " << test_number << ';' <<  endl;
     long long int step = (N - n)/dots_number;
-    long long int a[N];
+    long long int a[N], number;
     for (long long int i = n; i < N; i += step)
     {
         default_random_engine rng(i);
@@ -47,9 +47,10 @@ void protocol (bool search_type, bool case_type, long long int test_number, long
         for (long long int j = 0; j < i; ++j)
             a[j] = dstr(rng);
 
-        long long int number = a[dstr(rng)];
         if (not(case_type))
-            long long int number = 0;
+            number = 0;
+        else
+            number = a[dstr(rng)];
 
         if (not(search_type))
             sort(a, a+i);
@@ -82,10 +83,10 @@ int main()
 //    cout << "Number of tests:"; cin >> test_number;
     for (int i = 1; i <= test_number; ++i)
     {
-        protocol(false, false, i, dots_number, n, N);
-        protocol(true, false, i, dots_number, n, N);
-        protocol(false, true, i, dots_number, n, N);
-        protocol(false, false, i, dots_number, n, N);
+        protocol(true, true, i, dots_number, n, N);
+//        protocol(true, false, i, dots_number, n, N);
+//        protocol(false, true, i, dots_number, n, N);
+//        protocol(false, false, i, dots_number, n, N);
     }
 
     fout.close();
