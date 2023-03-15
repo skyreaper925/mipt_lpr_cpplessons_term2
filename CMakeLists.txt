@@ -1,0 +1,47 @@
+cmake_minimum_required(VERSION 3.24)
+project(mipt_lpr_cpplessons_term2)
+
+set(CMAKE_CXX_STANDARD 23)
+
+#add_executable(A0 week0/helloworld.cpp)
+#add_executable(B0 week0/quadratic_equation.cpp)
+#add_executable(C0 week0/greatest_common_divisor.cpp)
+#add_executable(D0 week0/prime_test.cpp)
+#
+#add_executable(A1 week1/A.cpp)
+#add_executable(B1 week1/B.cpp)
+#add_executable(C1 week1/C.cpp)
+#add_executable(D1 week1/D.cpp)
+#add_executable(E1 week1/E.cpp)
+#add_executable(E21 week1/E2.cpp)
+#add_executable(F1 week1/F.cpp)
+#add_executable(G1 week1/G.cpp)
+
+#add_executable(A2 week2/A.cpp)
+#add_executable(B2 week2/B.cpp)
+#add_executable(C2 week2/C.cpp)
+#add_executable(D2 week2/D.cpp)
+#add_executable(E2 week2/E.cpp)
+#add_executable(F2 week2/F.cpp)
+#add_executable(G2 week2/G.cpp)
+#add_executable(H2 week2/H.cpp)
+#add_executable(array week2/array.cpp)
+
+#add_executable(search lab1/search.cpp)
+#add_executable(sum_of_two lab1/sum_of_two.cpp)
+#add_executable(strategies lab1/strategies.cpp)
+
+#add_executable(shaker lab2/shaker.cpp)
+#add_executable(comb lab2/comb.cpp)
+#add_executable(shell lab2/shell.cpp)
+
+#add_executable(A3 week3/A.cpp)
+#add_executable(B3 week3/B.cpp)
+#add_executable(C3 week3/C.cpp)
+
+add_executable(A5 week5/A.cpp)
+add_executable(B5 week5/B.cpp)
+add_executable(C5 week5/C.cpp)
+add_executable(D5 week5/D.cpp)
+add_executable(E5 week5/E.cpp)
+add_executable(F5 week5/F.cpp)
