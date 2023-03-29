@@ -47,5 +47,6 @@ int main() {
     if (HEAD == nullptr) {
         cout << "OK" << endl;
     }
+
     return 0;
 }

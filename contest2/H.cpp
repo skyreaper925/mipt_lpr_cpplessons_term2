@@ -26,24 +26,38 @@ void push_back(Node*& head_ref, int new_key)
 
 }
 
-void remove_key(Node*& head_ptr, int key)
+void remove_key(Node*& head_ref, int key)
 {
-    Node* curr = head_ptr;
-    while (curr != nullptr)
-    {
-        if (curr->next != nullptr and (curr->next)->key == key)
-        {
-            auto tmp = curr->next;
-            curr->next = tmp->next;
-            delete tmp;
-        }
+    if (head_ref == nullptr)
+        return;
 
-        curr = curr->next;
+    Node* tmp1;
+
+    if (head_ref->key == key)
+    {
+        tmp1 = head_ref->next;
+        delete head_ref;
+        head_ref = tmp1;
+        return;
     }
 
-    delete curr;
-}
+    tmp1 = head_ref;
+    Node* tmp2;
+    while (tmp1->next != nullptr)
+    {
+        if ((tmp1->next)->key == key)
+            break;
 
+        tmp1 = tmp1->next;
+    }
+
+    if (tmp1->next == nullptr)
+        return;
+
+    tmp2 = (tmp1->next)->next;
+    delete tmp1->next;
+    tmp1->next = tmp2;
+}
 
 
 int main() {

@@ -11,20 +11,12 @@ struct Node
 
 void insert_after(Node*& prev_ref, int new_key)
 {
-    Node* node = new Node{new_key, nullptr};
     if (prev_ref == nullptr)
-    {
-        prev_ref = node;
-//        node->next = nullptr;
         return;
-    }
 
-    else
-    {
-        node->next = prev_ref->next;
-        prev_ref->next = node;
-    }
-
+    Node* node = new Node{new_key, nullptr};
+    node->next = prev_ref->next;
+    prev_ref->next = node;
 }
 
 int main() {
