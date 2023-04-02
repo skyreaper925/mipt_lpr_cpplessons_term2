@@ -3,14 +3,15 @@
 #include <random>
 #include <chrono>
 #include <fstream>
-#include <algorithm>
 using namespace std;
 
 long long const N = 200000;
 
 long long int full(long long int number, long long int size, long long int (a)[N])
 {
-    for (long long int i = 0; i < size; ++i) if (a[i] == number) return i+1;
+    for (long long int i = 0; i < size; ++i) if (a[i] == number)
+        return i+1;
+
     return 0;
 }
 

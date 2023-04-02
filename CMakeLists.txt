@@ -80,3 +80,7 @@ add_executable(G3 contest3/G.cpp)
 add_executable(H3 contest3/H.cpp)
 add_executable(I3 contest3/I.cpp)
 add_executable(J3 contest3/J.cpp)
+
+#add_executable(1 lab3/1.cpp)
+#add_executable(2 lab3/2.cpp)
+#add_executable(3 lab3/3.cpp)
