@@ -17,17 +17,15 @@ int main()
     const int a_min = 3;
     const int a_max = 1000;
     const int num_steps = 100;
+    default_random_engine rng(a_max);
 
     ofstream file("C://Users/volod/CLionProjects/mipt_lpr_cpplessons_term2/lab3/1.txt");
-    mt19937 rng;
     struct Dislocation dislocations[N];
     for (int b = 0; b < num_steps; b++)
     {
         int a = a_min + b * (a_max - a_min) / (num_steps - 1);
         for (int j = 0; j < num_measurements; j++)
         {
-            unsigned seed = chrono::system_clock::now().time_since_epoch().count();
-            rng.seed(seed);
 //            auto start = chrono::high_resolution_clock::now();
             uniform_int_distribution <int> distribution(0,a-1);
             uniform_int_distribution <int> dstr(0,4);
