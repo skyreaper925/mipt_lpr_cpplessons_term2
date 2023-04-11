@@ -9,8 +9,8 @@ struct Node
     Node* next = nullptr;
 };
 
+
 void push_front(Node* &head_ref, int new_key)
-//    Функция добавляет узел в начало списка и перемещает указатель head_ref на данный узел
 {
     Node* node = new Node;
     node->key = new_key;

@@ -9,8 +9,8 @@ struct Node
     Node* next = nullptr;
 };
 
+
 int main() {
-    Node* HEAD = nullptr;
     HEAD = new Node;
     if ((HEAD->key == 0) and (HEAD->next == nullptr)) {
         cout << "OK" << endl;
