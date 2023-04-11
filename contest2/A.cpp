@@ -11,7 +11,7 @@ struct Node
 
 
 int main() {
-    HEAD = new Node;
+    Node *HEAD = new Node;
     if ((HEAD->key == 0) and (HEAD->next == nullptr)) {
         cout << "OK" << endl;
     } else {
