@@ -35,7 +35,6 @@ void remove_key(Node *&head_ref, int key)
         return;
 
     Node *tmp1;
-
     if (head_ref->key == key)
     {
         tmp1 = head_ref->next;
@@ -53,9 +52,6 @@ void remove_key(Node *&head_ref, int key)
 
         tmp1 = tmp1->next;
     }
-
-    if (tmp1->next == nullptr)
-        return;
 
     tmp2 = (tmp1->next)->next;
     delete tmp1->next;

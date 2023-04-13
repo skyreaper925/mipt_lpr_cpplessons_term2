@@ -54,7 +54,7 @@ int revert (int n, int k)
     return revert_n;
 }
 
-int number_length (int n)
+int number_length(int (&a)[N])
 {
     int k = 0;
     while (n)
