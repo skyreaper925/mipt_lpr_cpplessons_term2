@@ -4,7 +4,7 @@
 using namespace std;
 
 
-void input_array(int *ptr, int N)
+void input_array(int *ptr, const size_t N)
 {
     for (int i = 0; i < N; ++i && ++ptr)
         cin >> *ptr;
