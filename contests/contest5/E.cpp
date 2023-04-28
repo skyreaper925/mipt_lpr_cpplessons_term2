@@ -5,9 +5,9 @@
 using namespace std;
 
 
-void input_array(int *ptr, const int size)
+void arr_print(int *ptr, const int size)
 {
-    for (int i = 0; i < size; ++i && ++ptr)
+    for (int i = 0; i < N; ++i && ++ptr)
         cin >> *ptr;
 }
 

@@ -5,7 +5,7 @@
 using namespace std;
 
 
-void input_array(int *ptr, int N)
+void arr_print(int *ptr, int N)
 {
     for (int i = 0; i < N; ++i && ++ptr)
         cin >> *ptr;
