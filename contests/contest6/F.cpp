@@ -8,17 +8,22 @@ using namespace std;
 
 int *create_sizes(const int *arr1, size_t size1)
 {
-    size_t size2 = 2 * (size1 - 1); // вычисляем размер нового массива
-    int *arr2 = new int[size2]; // создаем новый массив
+    // вычисляем размер нового массива
+    size_t size2 = 2 * (size1 - 1);
+    // создаем новый массив
+    int *arr2 = new int[size2];
     arr2[0] = arr1[0], arr2[size2 - 1] = arr1[size1 - 1];
-    size_t j = 1; // индекс для нового массива
+    // индекс для нового массива
+    size_t j = 1;
     for (size_t i = 1; i < size1 - 1; ++i, j += 2)
     {
-        arr2[j] = arr1[i]; // копируем текущий элемент
+        // копируем текущий элемент
+        arr2[j] = arr1[i];
         arr2[j + 1] = arr1[i];
     }
     delete[] arr1;
-    return arr2; // возвращаем новый массив
+    // возвращаем новый массив
+    return arr2;
 }
 
 
@@ -45,9 +50,8 @@ int main()
 //    arr_print(sizes, m);
     memset(table, 0x3f, sizeof(table));
     for (size_t i = 0; i < n - 1; i++)
-    {
         table[i][i] = 0;
-    }
+
 
     for (size_t len = 2; len <= n - 1; len++)
     {

@@ -27,17 +27,20 @@ int cutting(const size_t number)
 
 void cuts(int number)
 {
+    //trivial case
     if (number % 10 == 0)
     {
-        for (int i = 0; i < number / 10; i++)
+        for (int i = 0; i < number / 10; ++i)
             cout << 10 << ' ';
 
         return;
     }
+    //not trivial case: we will print cuts from the min-by-length
     int k = number % 10, s;
     s = cutting(k - 1);
-    for (int i = 0; i < k; i++)
+    for (int i = 0; i < k; ++i)
     {
+        //trivial moment in not trivial case
         if (k == 1)
         {
             cout << k << ' ';
@@ -58,7 +61,7 @@ void cuts(int number)
             break;
         }
     }
-
+    //after working with the remainders we just print 10s
     for (int i = 0; i < number / 10; i++)
         cout << 10 << ' ';
 }

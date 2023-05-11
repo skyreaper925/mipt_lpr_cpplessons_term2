@@ -1,5 +1,3 @@
-
-
 // thirst
 #include <iostream>
 #include <algorithm>

@@ -5,6 +5,13 @@
 using namespace std;
 
 
+void arr_input(int *ptr, const size_t N)
+{
+    for (int i = 0; i < N; ++i && ++ptr)
+        cin >> *ptr;
+}
+
+
 void arr_print(int *ptr, int N)
 {
     for (int i = 0; i < N; ++i && ++ptr)
@@ -30,7 +37,7 @@ int main()
     int S, N;
     cin >> S >> N;
     int *list = new int[N];
-    input_array(list, N);
+    arr_input(list, N);
 //    print_array(list, N);
     std::sort(list, list + N);
     cout << archiving(list, N, S) << endl;

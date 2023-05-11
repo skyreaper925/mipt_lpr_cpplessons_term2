@@ -1,3 +1,4 @@
+//supercomputer parallel calculations
 #include <iostream>
 #include <algorithm>
 
