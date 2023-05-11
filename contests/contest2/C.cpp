@@ -20,12 +20,10 @@ void push_back(Node*& head_ref, int new_key)
         head_ref = node;
         return;
     }
-
     while (tmp->next != nullptr)
         tmp = tmp->next;
 
     tmp->next = node;
-
 }
 
 

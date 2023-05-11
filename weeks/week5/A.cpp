@@ -1,5 +1,6 @@
 // Работа с указателями
 #include <iostream>
+
 using namespace std;
 
 
@@ -12,12 +13,13 @@ using namespace std;
 //}
 
 
-int main()
-{
+int main() {
     double number = 0;
-    double * pnumber = &number;
+    double *pnumber = &number;
     cout << pnumber << ' ' << *pnumber << endl;
-    pnumber -= 3; cout << pnumber << ' ' << *pnumber << endl;
-    pnumber += 5;cout << pnumber << ' ' << *pnumber << endl;
+    pnumber -= 3;
+    cout << pnumber << ' ' << *pnumber << endl;
+    pnumber += 5;
+    cout << pnumber << ' ' << *pnumber << endl;
     return 0;
 }
