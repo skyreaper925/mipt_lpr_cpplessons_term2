@@ -22,7 +22,7 @@ int main()
         cout << N << endl;
         return 0;
     }
-    //not trivial case. minimizing the wagon number
+    //not trivial case. minimazing the wagon number
     int left = 1, right = N, ans = N;
     while (left <= right)
     {

@@ -1,6 +1,7 @@
 // start 7 fin 4
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
